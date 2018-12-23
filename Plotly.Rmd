@@ -1,0 +1,20 @@
+---
+title: "Plotly"
+output:
+  pdf_document: default
+  html_document: default
+---
+###Tarik Bouchnayaf
+###December 23, 2018
+
+##load the dataset and libraries
+```{r}
+data(iris)
+library(plotly)
+library(bindrcpp)
+```
+##plot a chart using plotly
+```{r}
+plot_ly(iris, x = ~Petal.Length, y = ~Petal.Width,color = ~Species, mode = "markers")
+
+```
